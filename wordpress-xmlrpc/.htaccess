@@ -1,0 +1,9 @@
+
+
+# .htaccess WordPress xmlrpc.php devre disi birakmak
+<Files xmlrpc.php>
+ order deny,allow
+ deny from all
+ #allow from <izin verilen ip adresleri>
+ allow from xxx.xxx.xxx.xxx
+</Files>
