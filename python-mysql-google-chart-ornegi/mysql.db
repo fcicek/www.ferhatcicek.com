@@ -1,0 +1,13 @@
+#https://ferhatcicek.com/2015/07/19/raspberry-uzerinden-okunan-verinin-python-ile-mysqle-eklenmesi-ve-google-chart-ile-bu-verinin-grafiginin-olusturulmasi-ornegi/
+
+CREATE DATABASE raspberry_sistem;
+USE raspberry_sistem;
+
+CREATE TABLE cpu_temp ( id INT NOT NULL AUTO_INCREMENT,
+                      tarih DATE NOT NULL,
+                      saat TIME NOT NULL,
+                      sicaklik varchar(50),
+                      PRIMARY KEY ( id ));
+
+GRANT INSERT,SELECT ON raspberry_sistem.* TO 'raspberry'@'localhost' IDENTIFIED BY 'pi';
+FLUSH PRIVILEGES;
