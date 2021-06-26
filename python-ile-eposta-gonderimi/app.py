@@ -1,4 +1,3 @@
-#https://ferhatcicek.com/2021/06/02/python-ile-eposta-gonderimi/
 #app.py - flask-mail kullanarak eposta gönderimi
 
 from flask import Flask
